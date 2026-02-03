@@ -1,0 +1,152 @@
+\documentclass{beamer}
+\usepackage[hnu,en]{collegeBeamer}
+\usepackage{xeCJK}
+\usepackage{mathbbol}
+\usepackage[flushleft]{threeparttable}
+\usepackage{array,booktabs,makecell}
+
+\definecolor{hrefcol}{RGB}{0, 0, 255} % Example: blue color
+
+% meta-data
+\title{Bell nonlocality and collider \\ studies}
+%\subtitle{Using \LaTeX\ to prepare slides}
+\author{Zhijie Zhao}
+\date{\href{mailto:zhao@physik.uni-siegen.de}{zhao@physik.uni-siegen.de} \\ \today}
+
+% document body
+\begin{document}
+
+    \maketitle
+
+    \section{Vector-Like Lepton}
+
+    \begin{frame}{Vector-Like Lepton}{\thesection \, \secname}
+\begin{table}
+  \caption{Current experimental limits ($E_{cm}=13$ TeV, $\mathcal{L}=140$ fb$^{-1}$) on VLL.} 
+  \centering 
+  \begin{threeparttable}
+    \begin{tabular}{cccc}
+    %{m{15mm} m{70mm} m{18mm}}
+    Process  & Decay & Constraint (VLL) & Arxiv\\
+     \midrule\midrule
+$\tau^{\prime+}\tau^{\prime-}$  & $\tau^\prime\to \tau a_\tau \to \tau\gamma\gamma$  & $0-700$ GeV  &    \href{https://arxiv.org/pdf/2503.16699}{2503.16699}         \\%new row
+$e^{\prime+}e^{\prime-}, e^\prime N, NN$  & $e^\prime\to Z(H)e, N\to W\ell$ &  
+$0-1220$ GeV  &     \href{https://arxiv.org/pdf/2411.07143}{2411.07143}         \\%new row
+$\mu^{\prime+}\mu^{\prime-}, \mu^\prime N, NN$  & $\mu^\prime\to Z(H)\mu, N\to W\ell$ &  
+$0-1270$ GeV  &     \href{https://arxiv.org/pdf/2411.07143}{2411.07143}         \\%new row
+    \midrule\midrule
+    \end{tabular}
+\end{threeparttable}
+  \end{table}
+    \end{frame}
+
+    \begin{frame}{Vector-Like Lepton}
+        VLLs are non-chiral, which means that their left- and right-handed components have same gauge charges. 
+        The motivations of VLL: 
+        \begin{itemize}
+            \item Hierarchy problem
+            \item Muon $g-2$
+            \item Dark matter 
+            \item Vacuum stability
+            \item Flavor and mass hierarchy
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Why $\tau^\prime\to \tau a_\tau$? (\href{https://arxiv.org/pdf/2304.08509}{arXiv:2304.08509})}
+        \begin{itemize}
+            \item This model is renormalizable and includes only two new fields: a Dirac fermion $\mathcal{E}$ and a complex scalar $\phi$.
+            \item The $a_\tau$ is long-lived particle, which leads to deposits in the muon systems.
+            \item Violation of lepton universality from pion decays gives strong limits on the mixing of VLL with $e^\pm$ and $\mu^\pm$.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Why $\tau^\prime\to \tau a_\tau$? (\href{https://arxiv.org/pdf/2304.08509}{arXiv:2304.08509})}
+    The complex scalar can be written as 
+    \begin{equation*}
+        \phi = \left( v_{\phi} +\frac{1}{\sqrt{2}}\varphi\right)e^{ia_\tau/(\sqrt{2}v_{\phi})}
+    \end{equation*}
+    $v_\phi$ is the vacuum expectation value, which can be much larger than the mass of $a_\tau$. 
+    $\varphi_{\tau}$ is a CP-even scalar with mass of the order of $v_\phi$. 
+    The most general Yukawa couplings can be written as 
+    \begin{equation*}
+        -\begin{pmatrix}
+            \bar{e}^3_L & \bar{\mathcal{E}}_L
+        \end{pmatrix}
+        \begin{pmatrix}
+            y_3\left(v_H+\frac{h^0}{\sqrt{2}}\right) & 0 \\
+            m_o+\frac{y_oe^{i\beta_o}}{\sqrt{2}}(\varphi_\tau+ia_\tau) & m_\mathcal{E}+\frac{y_\mathcal{E}e^{i\beta_\mathcal{E}}}{\sqrt{2}}(\varphi_\tau+ia_\tau) \\
+        \end{pmatrix}
+        \begin{pmatrix}
+            e^3_R \\ \mathcal{E}_R
+        \end{pmatrix}
+        +\text{h.c.}
+    \end{equation*}
+    \end{frame}
+
+    \section{Long-Lived Charged Lepton}
+
+    \begin{frame}{Long-Lived Charged Lepton}
+\begin{table}
+  \caption{Current experimental limits ($E_{cm}=13$ TeV, $\mathcal{L}=140$ fb$^{-1}$) on Long-lived charged Lepton.} 
+  \centering 
+  \begin{threeparttable}
+    \begin{tabular}{cccc}
+    %{m{15mm} m{70mm} m{18mm}}
+    Process  & Decay & Constraint (LLP) & Arxiv\\
+     \midrule\midrule
+$\tau^{\prime+}\tau^{\prime-}$  & $\tau^\prime\to \tau \tilde{G}$  & $200-560$ GeV  &    \href{https://arxiv.org/pdf/2502.06694}{2502.06694}         \\%new row
+    \midrule\midrule
+    \end{tabular}
+\end{threeparttable}
+  \end{table}
+    \end{frame}
+
+    \section{$W^\prime$, $Z^\prime$}
+
+    \begin{frame}{$W^\prime$, $Z^\prime$}
+\begin{table}
+  \caption{Current most stringent experimental limits ($E_{cm}=13$ TeV, $\mathcal{L}=139$ fb$^{-1}$)}
+  \centering 
+  \begin{threeparttable}
+    \begin{tabular}{cccc}
+    %{m{15mm} m{70mm} m{18mm}}
+    Particle  & Channel & Constraint & ArXiv Number\\
+     \midrule\midrule
+$W^\prime$  & $W^\prime\to\ell\nu$ &   
+$0.15-7$ TeV       &     \href{https://arxiv.org/pdf/1906.05609}{1906.05609}, \href{https://arxiv.org/pdf/2202.06075}{2202.06075}         \\%new row
+$Z^\prime$  & $Z^\prime\to\ell\ell$ &   
+$0-5$ TeV       &     \href{https://arxiv.org/pdf/1903.06248}{1903.06248}, \href{https://arxiv.org/pdf/2103.02708}{2103.02708}         \\%new row
+    \midrule\midrule
+    \end{tabular}
+\end{threeparttable}
+  \end{table}        
+    \end{frame}
+
+    \section{$H^\pm$}
+
+        \begin{frame}{$H^\pm$}
+\begin{table}
+  \caption{Current most stringent experimental limits ($E_{cm}=13$ TeV, $\mathcal{L}=139$ fb$^{-1}$)}
+  \centering 
+  \begin{threeparttable}
+    \begin{tabular}{cccc}
+    %{m{15mm} m{70mm} m{18mm}}
+    Process  & Decay & Constraint & ArXiv Number\\
+     \midrule\midrule
+$pp\to H^\pm jj$  & $H^\pm\to WZ$ &   
+$0.2-1.5$ TeV       &     \href{https://arxiv.org/pdf/2407.10798}{2407.10798}        \\%new row
+$pp\to H^\pm$  & $H^\pm\to W\gamma$ &   
+$0.3-2.0$ TeV       &     \href{https://arxiv.org/pdf/2406.05737}{2406.05737}        \\%new row
+$t\to H^\pm b$  & $H^\pm\to Wa, a\to\mu\mu$ &   
+$120-160$ GeV       &     \href{https://arxiv.org/pdf/2304.14247}{2304.14247}        \\%new row
+$t\to H^\pm b$  & $H^\pm\to cb$ &   
+$60-160$ GeV       &     \href{https://arxiv.org/pdf/2302.11739}{2302.11739}        \\%new row
+    \midrule\midrule
+    \end{tabular}
+\end{threeparttable}
+  \end{table}        
+    \end{frame}
+
+    \QApage
+
+\end{document}
