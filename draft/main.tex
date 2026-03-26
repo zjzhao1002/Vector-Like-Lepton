@@ -1,0 +1,288 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{jheppub} % for details on the use of the package, please see the JINST-author-manual
+\usepackage{lineno}
+\linenumbers
+
+
+
+\arxivnumber{1234.56789} % if you have one
+
+\title{\boldmath A title with some math: $x=1$}
+
+% Collaborations
+
+%% [A] If main author
+%% \collaboration{\includegraphics[height=17mm]{collabroation-logo}\\[6pt]
+%%  XXX collaboration}
+
+%% or
+%% [B] If "on behalf of"
+%% \collaboration[c]{on behalf of XXX collaboration}
+
+
+% Authors
+% The "\note" macro will give a warning: "Ignoring empty anchor...", you can safely ignore it.
+
+%% [A] simple case: 2 authors, same institution
+%% \author[1]{A. Uthor\note{Corresponding author.}}
+%% \author{and A. Nother Author}
+%% \affiliation{Institution,\\Address, Country}
+
+%% or, e.g.
+%% [B] more complex case: 4 authors, 3 institutions, 2 footnotes
+%% \author[a,b]{F. Irst,\note{Now at another university}}
+%% \author[c]{S. Econd,}
+%% \author[a,2]{T. Hird\note{Also at Some University.}}
+%% \author[c,2]{and Fourth}
+%% \affiliation[a]{Institution_1,\\Address, Country}
+%% \affiliation[b]{Institution_2,\\Address, Country}
+%% \affiliation[c]{Institution_3,\\Address, Country}
+
+\author{A. Uthor}
+\affiliation{One University,\\
+some-street, Country}
+\affiliation{Another University,\\
+different-address, Country}
+
+% E-mail addresses: only for the corresponding author
+\emailAdd{first@one.univ}
+
+\abstract{Abstract...}
+
+
+
+\begin{document}
+\maketitle
+\flushbottom
+
+\section{Constraints from LHC}
+\label{sec:intro}
+
+In this section, we summarize the current LHC limits on New Physics particles. 
+The results are based on data at a center-of-mass energy of 13 TeV, corresponding to an integrated luminosity of 138-140 fb$^{-1}$. 
+
+\subsection{$Z^\prime$ and $W^\prime$}
+In the early 2026, CMS has published their combined statistical analysis of searches for heavy vector boson resonances~\cite{CMS:2026fjw}. 
+Both Drell–Yan (DY) and Vector Boson Fusion (VBF) data are analyzed.
+For $Z^\prime$, the decay channels $\ell^+\ell^-$, $q\bar{q}$, $t\bar{t}$, $ZZ$, $Zh$ are considered. 
+For $W^\prime$, the decay channels $\ell\bar{\nu_\ell}$ ($\ell=e,\mu,\tau$), $q\bar{q}^\prime$, $t\bar{b}$, $WZ$, $Wh$ are considered. 
+This combined analysis gives the most stringent constraints of Heavy Vector Triplet (HVT), 
+where $V^\prime$ are excluded with masses below $5.5$ TeV.
+
+For sequential standard model, the most stringent limits on $Z^\prime$ bosons come from high-mass dilepton resonance searches, 
+which set a lower mass limit on $5.2$ TeV~\cite{CMS:2021ctt}, 
+while the $W^\prime$ has a lower limit on $5.7$ TeV, coming from $\ell\bar{\nu_\ell}$ channel~\cite{CMS:2022krd}. 
+
+We summarize these constraints in Table \ref{table:Vprime}. 
+
+\begin{table}
+  \centering 
+    \begin{tabular}{cccc}
+    %{m{15mm} m{70mm} m{18mm}}
+    Process  & Decay & Lower Mass Limit & Reference \\
+     \hline
+    $pp\to W^\prime/Z^\prime$ & $V^\prime\to WH/WZ/ff$ & $5.5$ TeV & \cite{CMS:2026fjw} \\
+$pp\to Z^\prime$  & $Z^\prime\to\ell^+\ell^-$ &   
+$5.2$ TeV       &     \cite{CMS:2021ctt}        \\%new row
+$pp\to W^\prime$  & $W^\prime\to\ell\bar{\nu_\ell}$ &   
+$5.7$ TeV       &     \cite{CMS:2022krd}         \\%new row
+    \hline
+    \end{tabular}
+      \caption{Current most stringent experimental limits on $Z^\prime$ and $W^\prime$ from LHC.}
+      \label{table:Vprime}
+  \end{table} 
+
+\subsection{$H^\pm$}
+
+The searches for $H^\pm$ are categorized by its mass relative to the top quark: light ($m_{H^\pm} < m_t$) and heavy ($m_{H^\pm} > m_t$).
+
+For the light $H^\pm$, top quark can decay to $H^\pm$ and $b$ quark, 
+and $H^\pm$ further decays to Standard Model particles. 
+ATLAS has reported two decay channels: $H^+ \to \tau^+\nu_\tau$~\cite{ATLAS:2024hya}, $H^\pm \to cs$~\cite{ATLAS:2024oqu} and $H^\pm\to cb$~\cite{ATLAS:2023bzb}. 
+For $H^\pm \to \tau\nu_\tau$, current limits on the branching fraction $\mathcal{B}(t \to H^\pm b) \times \mathcal{B}(H^\pm \to \tau\nu_\tau)$ are as low as $0.02\%$ to $0.27\%$ with $m_{H^\pm}$ from $80$ GeV to $160$ GeV.
+For $H^\pm \to cs$, upper limits on $\mathcal{B}(t \to H^\pm b)$ in the $cs$ channel between $0.07\%$ and $3.6\%$, 
+assuming $\mathcal{B}(H^\pm \to cs)=1$ and $m_{H^\pm}\in (60, 168)$ GeV.
+Similar to $H^\pm \to cs$, $H^\pm\to cb$ gives the upper limits on $\mathcal{B}(t \to H^\pm b)$ between $0.15\%$ and $0.42\%$, where $m_{H^\pm}\in (60, 160)$ GeV.
+
+For the heavy $H^\pm$, the $pp\to tbH^\pm$ has been widely studied since it is the dominant process of 2HDM model. 
+The decay channels $H^\pm \to tb$~\cite{ATLAS:2021upq}, $H^\pm \to Wh$~\cite{ATLAS:2024rcu}, and $H^\pm \to \tau\nu_\tau$~\cite{ATLAS:2024hya}. 
+The mass range from $200$ GeV to $3$ TeV has been searched. 
+The constraints for $H^\pm$ are summarized in Table.~\ref{table:chargehiggs}.
+\begin{table}
+  \centering 
+    \begin{tabular}{cccc}
+    %{m{15mm} m{70mm} m{18mm}}
+    Process  & Decay & Mass Range & Reference \\
+     \hline
+$t\to H^\pm b$  & $H^+ \to \tau^+\nu_\tau$ &   
+$80-160$ GeV       &   \cite{ATLAS:2024hya}        \\%new row
+$t\to H^\pm b$  & $H^\pm\to cs$ &   
+$60-168$ GeV       &    \cite{ATLAS:2024oqu}        \\%new row
+$t\to H^\pm b$  & $H^\pm\to cb$ &   
+$60-160$ GeV       &    \cite{ATLAS:2023bzb}        \\%new row
+    \hline
+    $pp\to tbH^\pm$ & $H^\pm\to tb$ & 200-2000 GeV & \cite{ATLAS:2021upq} \\
+    $pp\to tbH^\pm$ & $H^\pm\to Wh$ & 230-3000 GeV & \cite{ATLAS:2024rcu} \\
+    $pp\to WbH^\pm b$ & $H^\pm\to \tau\nu_\tau$ & 80-3000 GeV & \cite{ATLAS:2024hya} \\
+    \hline
+    \end{tabular}
+      \caption{Current most stringent experimental limits on $H^\pm$ from LHC.}
+      \label{table:chargehiggs}
+  \end{table} 
+
+\subsection{$H^{\pm\pm}$}
+
+At LHC, doubly charged Higgs bosons can be produced via DY process or VBF process. 
+Then they can decay to same signed leptons or vector bosons. 
+Ref.~\cite{ATLAS:2022pbd} reports the search for DY production and the leptonic decay of $H^{\pm\pm}$. 
+All combinations of lepton pairs have been considered, and they have the same branching ratio ($1/6$). 
+This analysis gives a lower mass limit on $1.08$ TeV.
+In another analysis~\cite{ATLAS:2024txt}, the VBF production and $H^{\pm\pm}\to W^\pm W^\pm$, 
+where $W$ further decays to lepton and neutrino, 
+is studied. 
+In this case, the mass range from $0.2$ TeV to $1.5$ TeV is excluded.
+The searches for doubly charged Higgs bosons are listed in table.~\ref{table:doublycharge}.
+
+\begin{table}
+  \centering 
+    \begin{tabular}{cccc}
+    %{m{15mm} m{70mm} m{18mm}}
+    Process  & Decay & Lower Mass Limit & Reference \\
+     \hline
+$pp\to H^{++}H^{--}$  & $H^{\pm\pm}\to \ell^\pm\ell^\pm$ &   
+$1.08$ TeV       &     \cite{ATLAS:2022pbd}        \\%new row
+$pp\to H^{\pm\pm} jj$  & $H^{\pm\pm}\to W^\pm W^\pm$ &   
+$1.5$ TeV       &     \cite{ATLAS:2024txt}        \\%new row
+    \hline
+    \end{tabular}
+  \caption{Current most stringent experimental limits ($E_{cm}=13$ TeV, $\mathcal{L}=139$ fb$^{-1}$)}
+  \label{table:doublycharge}
+  \end{table}    
+~
+~
+~
+~
+
+For internal references use label-refs: see section~\ref{sec:intro}.
+Bibliographic citations can be done with "cite": refs.~\cite{a,b,c}.
+When possible, align equations on the equal sign. The package
+\texttt{amsmath} is already loaded. See \eqref{eq:x}.
+\begin{equation}
+\label{eq:x}
+\begin{aligned}
+x &= 1 \,,
+\qquad
+y = 2 \,,
+\\
+z &= 3 \,.
+\end{aligned}
+\end{equation}
+Also, watch out for the punctuation at the end of the equations.
+
+
+If you want some equations without the tag (number), please use the available
+starred-environments. For example:
+\begin{equation*}
+x = 1
+\end{equation*}
+
+\section{Figures and tables}
+
+All figures and tables should be referenced in the text and should be
+placed on the page where they are first cited or in
+subsequent pages. Positioning them in the source file
+after the paragraph where you first reference them usually yield good
+results. See figure~\ref{fig:i} and table~\ref{tab:i} for layout examples. 
+Please note that a caption is mandatory  and it must be placed at the bottom of both figures and tables.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.4\textwidth]{example-image-a}
+\qquad
+\includegraphics[width=.4\textwidth]{example-image-b}
+\caption{Always give a caption.\label{fig:i}}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{lr|c}
+\hline
+x&y&x and y\\
+\hline
+a & b & a and b\\
+1 & 2 & 1 and 2\\
+$\alpha$ & $\beta$ & $\alpha$ and $\beta$\\
+\hline
+\end{tabular}
+\caption{We prefer to have top and bottom borders around the tables.\label{tab:i}}
+\end{table}
+
+We discourage the use of inline figures (e.g. \texttt{wrapfigure}), as they may be
+difficult to position if the page layout changes.
+
+We suggest not to abbreviate: ``section'', ``appendix'', ``figure''
+and ``table'', but ``eq.'' and ``ref.'' are welcome. Also, please do
+not use \texttt{\textbackslash emph} or \texttt{\textbackslash it} for
+latin abbreviaitons: i.e., et al., e.g., vs., etc.
+
+
+\paragraph{Up to paragraphs.} We find that having more levels usually
+reduces the clarity of the article. Also, we strongly discourage the
+use of non-numbered sections (e.g.~\texttt{\textbackslash
+  subsubsection*}).  Please also consider the use of
+``\texttt{\textbackslash texorpdfstring\{\}\{\}}'' to avoid warnings
+from the \texttt{hyperref} package when you have math in the section titles.
+
+
+
+\appendix
+\section{Some title}
+Please always give a title also for appendices.
+
+
+
+
+
+\acknowledgments
+
+This is the most common positions for acknowledgments. A macro is
+available to maintain the same layout and spelling of the heading.
+
+\paragraph{Note added.} This is also a good position for notes added
+after the paper has been written.
+
+
+% Bibliography
+
+%% [A] Recommended: using JHEP.bst file
+\bibliographystyle{JHEP}
+\bibliography{biblio.bib}
+
+%% or
+%% [B] Manual formatting (see below)
+%% (i) We suggest to always provide author, title and journal data or doi:
+%% in short all the informations that clearly identify a document.
+%% (ii) please avoid comments such as "For a review'', "For some examples",
+%% "and references therein" or move them in the text. In general, please leave only references in the bibliography and move all
+%% accessory text in footnotes.
+%% (iii) Also, please have only one work for each \bibitem.
+
+% \begin{thebibliography}{99}
+
+% \bibitem{a}
+% Author,
+% \emph{Title},
+% \emph{J. Abbrev.} {\bf vol} (year) pg.
+
+% \bibitem{b}
+% Author,
+% \emph{Title},
+% arxiv:1234.5678.
+
+% \bibitem{c}
+% Author,
+% \emph{Title},
+% Publisher (year).
+
+% \end{thebibliography}
+\end{document}
