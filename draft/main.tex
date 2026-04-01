@@ -1,6 +1,8 @@
 \documentclass[a4paper,11pt]{article}
 \usepackage{jheppub} % for details on the use of the package, please see the JINST-author-manual
 \usepackage{lineno}
+\usepackage[utf8]{inputenc}
+\usepackage{textgreek}
 \linenumbers
 
 
@@ -38,11 +40,11 @@
 %% \affiliation[b]{Institution_2,\\Address, Country}
 %% \affiliation[c]{Institution_3,\\Address, Country}
 
-\author{A. Uthor}
-\affiliation{One University,\\
-some-street, Country}
-\affiliation{Another University,\\
-different-address, Country}
+\author{Zhijie Zhao}
+\affiliation{Henan Normal University,\\
+453007 Xinxiang, China}
+%\affiliation{Another University,\\
+%different-address, Country}
 
 % E-mail addresses: only for the corresponding author
 \emailAdd{first@one.univ}
@@ -59,7 +61,7 @@ different-address, Country}
 \label{sec:intro}
 
 In this section, we summarize the current LHC limits on New Physics particles. 
-The results are based on data at a center-of-mass energy of 13 TeV, corresponding to an integrated luminosity of 138-140 fb$^{-1}$. 
+The results are based on data at a center-of-mass energy of 13 TeV, corresponding to an integrated luminosity of 136-140 fb$^{-1}$. 
 
 \subsection{$Z^\prime$ and $W^\prime$}
 In the early 2026, CMS has published their combined statistical analysis of searches for heavy vector boson resonances~\cite{CMS:2026fjw}. 
@@ -67,7 +69,7 @@ Both Drell–Yan (DY) and Vector Boson Fusion (VBF) data are analyzed.
 For $Z^\prime$, the decay channels $\ell^+\ell^-$, $q\bar{q}$, $t\bar{t}$, $ZZ$, $Zh$ are considered. 
 For $W^\prime$, the decay channels $\ell\bar{\nu_\ell}$ ($\ell=e,\mu,\tau$), $q\bar{q}^\prime$, $t\bar{b}$, $WZ$, $Wh$ are considered. 
 This combined analysis gives the most stringent constraints of Heavy Vector Triplet (HVT), 
-where $V^\prime$ are excluded with masses below $5.5$ TeV.
+where $Z^\prime$ and $W^\prime$ are excluded with masses below $5.5$ TeV.
 
 For sequential standard model, the most stringent limits on $Z^\prime$ bosons come from high-mass dilepton resonance searches, 
 which set a lower mass limit on $5.2$ TeV~\cite{CMS:2021ctt}, 
@@ -92,13 +94,89 @@ $5.7$ TeV       &     \cite{CMS:2022krd}         \\%new row
       \label{table:Vprime}
   \end{table} 
 
+\subsection{CP-odd Neutral Higgs Boson ($A$) and CP-even Neutral Higgs Boson ($H$)}
+
+LHC constraints on CP-odd neutral Higgs boson are evolved into two main regimes: 
+light pseudoscalars (masses below the 125 GeV Higgs boson) and 
+searches for heavy pseudoscalars (masses up to several TeV). 
+
+For particle $A$ mass $m_A\leq 1$ GeV, the decay mode $A\to \gamma\gamma$ become important 
+because it involves in photophilic scenarios~\cite{Curtin:2013fra}. 
+CMS~\cite{CMS:2022fyt,CMS:2026knm} has studied the $pp\to h\to AA\to 4\gamma$ process. 
+The result set a upper limit on the branching ratio $\mathcal{B}(h\to AA\to 4\gamma)$ down to $\mathcal{O}(10^{-3})$. 
+When $m_A\geq 2m_\tau$, the decay $A\to \tau^+\tau^-$ becomes dominant. 
+Ref.~\cite{ATLAS:2024rzd} reports a search for $pp\to A\to\tau^+\tau^-$ process. 
+One $\tau$ decays to electron and neutrinos, 
+while the other $\tau$ decays to muon and neutrinos. 
+$A$ mass range between $20$ GeV and $90$ GeV has been searched, 
+and no significant excess is observed. 
+Recently, Ref.~\cite{CMS:2026vim} has searched for $h\to AA\to \mu^+\mu^-\tau^+\tau^-$ decay. 
+Four decay modes $\tau\tau\to e\mu+\text{neutrinos}$, $\tau\tau\to e+\text{hadron(s)}+\text{neutrinos}$, 
+$\tau\tau\to \mu+\text{hadron(s)}+\text{neutrinos}$, 
+and $\tau\tau\to \text{hadrons}+\text{neutrinos}$ are considered.
+For $m_A\in(3.6, 21)$ GeV, the branching ratio is set to upper limit on $\mathcal{O}(10^{-4})$. 
+Table \ref{table:cp-odd} summarizes the searches for light $A$.
+
+\begin{table}
+  \centering 
+    \begin{tabular}{cccc}
+    %{m{15mm} m{70mm} m{18mm}}
+    Process  & Decay & Mass Range & Reference \\
+     \hline
+    $pp\to h$ & $h\to AA\to 4\gamma$ & $0.1-1.5$ GeV & \cite{CMS:2022fyt} \\
+    $pp\to A$  & $A\to\tau\tau$ &   
+$20-90$ GeV       &     \cite{ATLAS:2024rzd}        \\%new row
+$pp\to h$  & $h\to AA\to\mu\mu\tau\tau$ &   
+$3.6-21$ GeV       &     \cite{CMS:2026vim}        \\%new row
+    \hline
+    \end{tabular}
+      \caption{Current most stringent experimental limits on light $A$ from LHC.}
+      \label{table:cp-odd}
+  \end{table} 
+
+For the heavy $A$ in TeV level, the Two-Higgs-Doublet Model (2HDM) is the most popular benchmark model in searching for $A$, as well as the CP-even Higgs boson $H$.
+In the 2HDM, the ratio of the vacuum expectation values (VEV) of two doublets, 
+denoted as $\tan\beta$, is an important parameter. 
+When $\tan\beta$ is large, say $10\leq\tan\beta\leq 60$, 
+the dominant decay modes of $A/H$ are $A/H\to b\bar{b}$ or $\tau^+\tau^-$. 
+Early searches~\cite{ATLAS:2020zms,CMS:2022goy} for $pp\to A/H\to \tau^+\tau^-$ give strong constraints on $m_A$ and $m_H$. 
+The lower mass limits on $m_A$ and $m_H$ are set on around $2$ TeV when $\tan\beta\geq 50$. 
+For the low $\tan\beta$, the decay mode $A/H\to t\bar{t}$ becomes important since the coupling to top quarks is enhanced.
+Ref.~\cite{ATLAS:2024vxm} has searched for the $pp\to A/H\to t\bar{t}$ process, 
+where one top quark decays leptonically and the other hadronically.
+Assuming $m_A=m_H$, the masses up to $1240$ GeV are excluded for the lowest tested $\tan\beta=0.4$. 
+When $m_A>m_H+m_Z$, the decay $A\to ZH$ becomes possible and is dominant in a wide range of 2HDM parameter space. 
+Ref.~\cite{CMS:2024yiy} has searched for $pp\to A\to ZH$ process, 
+with $H\to t\bar{t}$. 
+$Z$ boson further decays to muons or electrons, 
+while top quarks decay hadronically. 
+The upper limits on $m_A=2100$ GeV and $m_H=2000$ GeV are obtained. 
+The summary of constraints on heavy $A$ and $H$ are listed in table~\ref{table:heavy-higgs}.
+
+\begin{table}
+  \centering 
+    \begin{tabular}{cccc}
+    %{m{15mm} m{70mm} m{18mm}}
+    Process  & Decay & Upper Mass Limit & Reference \\
+     \hline
+    $pp\to A/H$ & $A/H\to \tau^+\tau^-$ & $2000$ GeV & \cite{ATLAS:2020zms,CMS:2022goy} \\
+    $pp\to A/H$  & $A/H\to t\bar{t}$ &   
+$1240$ GeV       &     \cite{ATLAS:2024vxm}        \\%new row
+$pp\to A\to ZH$  & $H\to t\bar{t},Z\to\ell^+\ell^-$ &   
+$m_A=2100$ GeV, $m_H=2000$ GeV      &     \cite{CMS:2024yiy}        \\%new row
+    \hline
+    \end{tabular}
+      \caption{Current most stringent experimental limits on light $A$ from LHC.}
+      \label{table:heavy-higgs}
+  \end{table} 
+
 \subsection{$H^\pm$}
 
 The searches for $H^\pm$ are categorized by its mass relative to the top quark: light ($m_{H^\pm} < m_t$) and heavy ($m_{H^\pm} > m_t$).
 
 For the light $H^\pm$, top quark can decay to $H^\pm$ and $b$ quark, 
 and $H^\pm$ further decays to Standard Model particles. 
-ATLAS has reported two decay channels: $H^+ \to \tau^+\nu_\tau$~\cite{ATLAS:2024hya}, $H^\pm \to cs$~\cite{ATLAS:2024oqu} and $H^\pm\to cb$~\cite{ATLAS:2023bzb}. 
+ATLAS has reported three decay modes: $H^+ \to \tau^+\nu_\tau$~\cite{ATLAS:2024hya}, $H^\pm \to cs$~\cite{ATLAS:2024oqu} and $H^\pm\to cb$~\cite{ATLAS:2023bzb}. 
 For $H^\pm \to \tau\nu_\tau$, current limits on the branching fraction $\mathcal{B}(t \to H^\pm b) \times \mathcal{B}(H^\pm \to \tau\nu_\tau)$ are as low as $0.02\%$ to $0.27\%$ with $m_{H^\pm}$ from $80$ GeV to $160$ GeV.
 For $H^\pm \to cs$, upper limits on $\mathcal{B}(t \to H^\pm b)$ in the $cs$ channel between $0.07\%$ and $3.6\%$, 
 assuming $\mathcal{B}(H^\pm \to cs)=1$ and $m_{H^\pm}\in (60, 168)$ GeV.
@@ -132,7 +210,7 @@ $60-160$ GeV       &    \cite{ATLAS:2023bzb}        \\%new row
 
 \subsection{$H^{\pm\pm}$}
 
-At LHC, doubly charged Higgs bosons can be produced via DY process or VBF process. 
+At the LHC, doubly charged Higgs bosons can be produced via DY process or VBF process. 
 Then they can decay to same signed leptons or vector bosons. 
 Ref.~\cite{ATLAS:2022pbd} reports the search for DY production and the leptonic decay of $H^{\pm\pm}$. 
 All combinations of lepton pairs have been considered, and they have the same branching ratio ($1/6$). 
@@ -155,84 +233,67 @@ $pp\to H^{\pm\pm} jj$  & $H^{\pm\pm}\to W^\pm W^\pm$ &
 $1.5$ TeV       &     \cite{ATLAS:2024txt}        \\%new row
     \hline
     \end{tabular}
-  \caption{Current most stringent experimental limits ($E_{cm}=13$ TeV, $\mathcal{L}=139$ fb$^{-1}$)}
+  \caption{Current most stringent experimental limits on $H^{\pm\pm}$ from LHC.}
   \label{table:doublycharge}
   \end{table}    
-~
-~
-~
-~
 
-For internal references use label-refs: see section~\ref{sec:intro}.
-Bibliographic citations can be done with "cite": refs.~\cite{a,b,c}.
-When possible, align equations on the equal sign. The package
-\texttt{amsmath} is already loaded. See \eqref{eq:x}.
-\begin{equation}
-\label{eq:x}
-\begin{aligned}
-x &= 1 \,,
-\qquad
-y = 2 \,,
-\\
-z &= 3 \,.
-\end{aligned}
-\end{equation}
-Also, watch out for the punctuation at the end of the equations.
+\subsection{Vector-Like Lepton (VLL)}
 
+VLLs are predicted in many extensions of the Standard Model, including composite Higgs models and theories addressing the muon $g-2$ anomaly.
+The production and decay modes for VLLs depend on the assumed $SU(2)$
+representation~\cite{Kumar:2015tna,Bhattiprolu:2019vdu}. 
+In the doublet scenario, two mass-degenerate VLLs at tree level, one electrically charged ($L^\pm$) and one electrically neutral ($N$), form an SU(2) doublet $(L, N)$.
+At the LHC, VLLs are predominantly produced in pairs via the electroweak interaction 
+($pp\to Z^*/\gamma^*\to L^+L^-$, $pp\to Z^*\to N\bar{N}$ or $pp\to W^*\to L^+\bar{N}$).
+The charged VLL decay modes are $L\to Z\ell$ and $L\to h\ell$. 
+When $m_L\gg m_h$, the branching ratio reaches $50\%$ for each modes.
+The neutral VLL $N$ decays to lepton and $W$ boson with $100\%$ branching ratio.
+In the singlet scenario, only the charged VLL is present. 
+It is also produced in pairs, $pp\to Z^*/\gamma^*\to L^+L^-$. 
+Its decay modes are $L\to W\nu$, $L\to Z\ell$ and $L\to h\ell$, 
+with branching ratio $50\%$, $25\%$ and $25\%$, respectively. 
+Ref.~\cite{ATLAS:2024mrr} has searched for these processes and decay modes. 
+Its result gives lower mass limits on 1220 GeV (1270 GeV) and 320 GeV (400 GeV) for vector-like electrons (muons) in the
+doublet and singlet scenarios, respectively.
 
-If you want some equations without the tag (number), please use the available
-starred-environments. For example:
-\begin{equation*}
-x = 1
-\end{equation*}
+In another paper~\cite{CMS:2025urb}, the pair production of vector-like tau ($\tau^\prime$) has been considered. 
+$\tau^\prime$ decays to SM $\tau$ and a light long-lived pseudoscalar boson ($a_\tau$). 
+Since $a_\tau$ is long-lived particle, it leads to deposits in the muon system, 
+which motivated experimentalists to search for this process.
+In the muon system, $a_\tau$ further decays to two photons, assuming it has mass below the $\tau^+\tau^-$ threshold. 
+In this analysis, the mass of $a_\tau$ is assumed to be $m_{a_{\tau}}=2$ GeV.
+This analysis targets signals with at least one hadronically decaying $\tau$ and with at least one muon detector shower resulting from the $a_\tau$ decay in the CMS muon system. 
+Its result excludes $\tau^\prime$ masses up to 700 GeV. 
 
-\section{Figures and tables}
+Ref.~\cite{ATLAS:2025wgc} searches for VLL in the 4321 model.
+In this model, only one generation of VLLs is present in the model, and it is assumed to be fully mass degenerate. 
+VLLs are produced through the pair production as mentioned above, 
+and then they decay through a vector leptoquark $U_1$ as $L\to U_1\bar{b}$ and $N\to \bar{U}_1t$, 
+followed by $U_1\to t\bar{\nu}_\tau$ or $U_1\to b\tau^+$. 
+The branching ratios are $\mathcal{B}(L\to b\bar{b}\tau^+)=\mathcal{B}(L\to t\bar{b}\bar{\nu}_\tau)=50\%$ 
+and $\mathcal{B}(N\to t\bar{t}\nu_\tau)=\mathcal{B}(N\to t\bar{b}\tau^-)=50\%$.
+Ref.~\cite{ATLAS:2025wgc} set a lower observed (expected) limit of 910
+GeV on the VLL mass.
 
-All figures and tables should be referenced in the text and should be
-placed on the page where they are first cited or in
-subsequent pages. Positioning them in the source file
-after the paragraph where you first reference them usually yield good
-results. See figure~\ref{fig:i} and table~\ref{tab:i} for layout examples. 
-Please note that a caption is mandatory  and it must be placed at the bottom of both figures and tables.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.4\textwidth]{example-image-a}
-\qquad
-\includegraphics[width=.4\textwidth]{example-image-b}
-\caption{Always give a caption.\label{fig:i}}
-\end{figure}
-
-\begin{table}[htbp]
-\centering
-\begin{tabular}{lr|c}
-\hline
-x&y&x and y\\
-\hline
-a & b & a and b\\
-1 & 2 & 1 and 2\\
-$\alpha$ & $\beta$ & $\alpha$ and $\beta$\\
-\hline
-\end{tabular}
-\caption{We prefer to have top and bottom borders around the tables.\label{tab:i}}
-\end{table}
-
-We discourage the use of inline figures (e.g. \texttt{wrapfigure}), as they may be
-difficult to position if the page layout changes.
-
-We suggest not to abbreviate: ``section'', ``appendix'', ``figure''
-and ``table'', but ``eq.'' and ``ref.'' are welcome. Also, please do
-not use \texttt{\textbackslash emph} or \texttt{\textbackslash it} for
-latin abbreviaitons: i.e., et al., e.g., vs., etc.
-
-
-\paragraph{Up to paragraphs.} We find that having more levels usually
-reduces the clarity of the article. Also, we strongly discourage the
-use of non-numbered sections (e.g.~\texttt{\textbackslash
-  subsubsection*}).  Please also consider the use of
-``\texttt{\textbackslash texorpdfstring\{\}\{\}}'' to avoid warnings
-from the \texttt{hyperref} package when you have math in the section titles.
-
+Table~\ref{table:vll} summarizes the current LHC constraints on VLL.
+\begin{table}
+  
+  \centering 
+    \begin{tabular}{cccc}
+    %{m{15mm} m{70mm} m{18mm}}
+    Process  & Decay & Lower Mass Limit & Reference\\
+    \hline
+$pp\to e^{\prime+}e^{\prime-}, e^\prime N, NN$  & $e^\prime\to Z(H)e, N\to W\ell$ &  
+$1220$ GeV  &     \cite{ATLAS:2024mrr}         \\%new row
+$pp\to\mu^{\prime+}\mu^{\prime-}, \mu^\prime N, NN$  & $\mu^\prime\to Z(H)\mu, N\to W\ell$ &  
+$1270$ GeV  &    \cite{ATLAS:2024mrr}       \\%new row
+$pp\to \tau^{\prime+}\tau^{\prime-}$  & $\tau^\prime\to \tau a_\tau \to \tau\gamma\gamma$  & $700$ GeV  &    \cite{CMS:2025urb}        \\%new row
+$pp\to L^{+}L^{-}, L N, NN$ & $L\to b\bar{b}\tau, t\bar{b}\bar{\nu}_\tau$, $N\to t\bar{t}\nu_\tau, t\bar{b}\tau^-$ & $910$ GeV & \cite{ATLAS:2025wgc} \\%new row
+    \hline
+    \end{tabular}
+\caption{Current experimental limits on VLL from LHC.} 
+\label{table:vll}
+  \end{table}
 
 
 \appendix
