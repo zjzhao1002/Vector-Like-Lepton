@@ -61,7 +61,7 @@
 \label{sec:intro}
 
 In this section, we summarize the current LHC limits on New Physics particles. 
-The results are based on data at a center-of-mass energy of 13 TeV, corresponding to an integrated luminosity of 136-140 fb$^{-1}$. 
+Unless specified otherwise, these results are based on data at a center-of-mass energy of 13 TeV, corresponding to an integrated luminosity of 136-140 fb$^{-1}$. 
 
 \subsection{$Z^\prime$ and $W^\prime$}
 In the early 2026, CMS has published their combined statistical analysis of searches for heavy vector boson resonances~\cite{CMS:2026fjw}. 
@@ -157,7 +157,7 @@ The summary of constraints on heavy $A$ and $H$ are listed in table~\ref{table:h
   \centering 
     \begin{tabular}{cccc}
     %{m{15mm} m{70mm} m{18mm}}
-    Process  & Decay & Upper Mass Limit & Reference \\
+    Process  & Decay & Lower Mass Limit & Reference \\
      \hline
     $pp\to A/H$ & $A/H\to \tau^+\tau^-$ & $2000$ GeV & \cite{ATLAS:2020zms,CMS:2022goy} \\
     $pp\to A/H$  & $A/H\to t\bar{t}$ &   
@@ -295,6 +295,73 @@ $pp\to L^{+}L^{-}, L N, NN$ & $L\to b\bar{b}\tau, t\bar{b}\bar{\nu}_\tau$, $N\to
 \label{table:vll}
   \end{table}
 
+\subsection{Long-Lived Particles}
+Long-lived particles (LLP) appear in many dark matter and SUSY scenarios. 
+These particles can travel a measurable distance through a particle detector before decaying. 
+Detecting LLPs is a challenge because their decay signatures are non-conventional.
+Usually some specific reconstruction algorithms are necessary.
+
+Ref.~\cite{ATLAS:2025fdm} presents a search for LLPs by ATLAS detector. 
+This analysis evaluates three types of LLPs: gluinos ($\tilde{g}$), charginos ($\tilde{\chi}^\pm_1$), and staus ($\tilde{\tau}$).
+All of these particles are assumed to be pair-produced. 
+In these process, each gluino decays into a stable neutralino ($\tilde{\chi}^0_1$) and two quarks, 
+each chigino decays into a stable neutralino and a pion, 
+and each stau decays into a $\tau$ lepton and a stable gravitino ($\tilde{G}$). 
+Since no new physics is observed, 95\% Confident Level (CL) mass limits are: $m_{\tilde{g}}>2270$ GeV with a lifetime $\tau\approx 30$ ns, $m_{\tilde{\chi}^\pm_1}>1300$ GeV ($\tau>100$ ns), and $m_{\tilde{\tau}}>560$ GeV ($\tau=10$ ns).
+
+Ref.~\cite{ATLAS:2026hnb} extends previous study to events with one jet.
+They reconstruct the signal that recoils a high-momentum jet from initial state radiation. 
+In this case, chargino decays into pion and neutralino, $\tilde{\chi}^\pm_1\to\pi^\pm\tilde{\chi}^0_1$.
+When the lifetime of chargino is shorter than 0.03 ns, the mass up to 225 GeV is excluded. 
+When the lifetime is as long as 1 ns, the mass up to 720 GeV is excluded for the Higgsino scenario and 880 GeV is excluded for the wino scenario. 
+For the stau, two scenarios are considered: the Constrained Minimal Supersymmetric Standard Model (CMSSM) and the gauge-mediated supersymmetry-breaking (GMSB) model.
+The CMSSM $\tilde{\tau}$ decays into $\tau\tilde{\chi}^0_1$ with 100\% branching fractions, while the GMSB $\tilde{\tau}$ has 100\% branching fraction for $\tilde{\tau}\to \tau\tilde{G}$. 
+The mass of stau up to 320 GeV is excluded for the CMSSM scenario and 300 GeV is excluded for the GMSB scenario.
+
+Ref.~\cite{ATLAS:2026aej} presents a search for LLPs by targeting at least one displaced vertex in event. 
+In this paper, a new dataset with $\sqrt{s}=13.6$ TeV and $\mathcal{L}=164$ fb$^{-1}$ is used.
+Three types of LLPs are searched: Higgsino with lepton-number-violating (L-violating) decay, 
+Higgsino with baryon-number-violating decay (B-violating), 
+and stop ($\tilde{t}$).
+Both of them are pair productions. 
+For the Higgsino, the following production modes are considered: $\tilde{\chi}^0_1\tilde{\chi}^0_2$, $\tilde{\chi}^0_1\tilde{\chi}^\pm_1$, $\tilde{\chi}^0_2\tilde{\chi}^\pm_1$,
+and $\tilde{\chi}^\pm_1\tilde{\chi}^\mp_1$,
+where $\tilde{\chi}^0_1$ is the lightest supersymmetric particle, 
+$\tilde{\chi}^0_2$ is the next-to-lightest neutralino and $\tilde{\chi}^\pm_1$ is the lightest chargino.
+When the Higgsino is L-violating type, the neutral LLPs decay into $\mu^-u\bar{d}$, and $\tilde{\chi}^\pm_1\to \mu^\pm d\bar{d}$.
+When the Higgsino is B-violating type, the neutral LLPs decay into $tsb$, and $\tilde{\chi}^+_1\to \bar{b}\bar{s}\bar{b}$.
+For stop, it decays into $\mu^+b$.
+Results of this paper set a 95\% CL lower limits on these particles:
+Higgsino with L-violating decays: 1600 GeV, 
+Higgsino with B-violating decays: 1150 GeV,
+stop: 1850 GeV.
+The lifetimes of these particles are assumed to be $0.1$ ns.
+
+\begin{table}
+  
+  \centering 
+    \begin{tabular}{cccc}
+    %{m{15mm} m{70mm} m{18mm}}
+    Process  & Decay & Lower Mass Limit & Reference\\
+    \hline
+$pp\to \tilde{g}\tilde{g}$  & $\tilde{g}\to\tilde{\chi}^0_1qq$ &  
+$2270$ GeV (30 ns) &     \cite{ATLAS:2025fdm}         \\%new row
+$pp\to\tilde{\chi}^\pm_1\tilde{\chi}^\mp_1$  & $\tilde{\chi}^\pm_1\to \tilde{\chi}^0_1\pi$ &  
+$1300$ GeV (100 ns)  &    \cite{ATLAS:2025fdm}       \\%new row
+$pp\to \tilde{\tau}^+\tilde{\tau}^-$  & $\tilde{\tau}\to\tau\tilde{G}$  & $560$ GeV (10 ns)  &    \cite{ATLAS:2025fdm}       \\%new row
+$pp\to \tilde{\chi}^0_1\tilde{\chi}^\pm_1j$  & $\tilde{\chi}^\pm_1\to \tilde{\chi}^0_1\pi$  & $225$ GeV (0.03 ns)  &    \cite{ATLAS:2026hnb}       \\%new row
+$pp\to \tilde{\chi}^0_1\tilde{\chi}^\pm_1j$  & $\tilde{\chi}^\pm_1\to \tilde{\chi}^0_1\pi$  & $720$ GeV (1 ns)  &    \cite{ATLAS:2026hnb}       \\%new row
+$pp\to \tilde{\chi}^0_1\tilde{\chi}^\pm_1j$  & $\tilde{\chi}^\pm_1\to \tilde{\chi}^0_1\pi$  & $880$ GeV (1 ns, wino)  &    \cite{ATLAS:2026hnb}       \\%new row
+$pp\to \tilde{\tau}^+\tilde{\tau}^-$  & $\tilde{\tau}\to\tau\tilde{\chi}^0_1$  & $320$ GeV (1 ns) &    \cite{ATLAS:2026hnb}       \\%new row
+$pp\to \tilde{\tau}^+\tilde{\tau}^-$  & $\tilde{\tau}\to\tau\tilde{G}$  & $300$ GeV (1 ns) &    \cite{ATLAS:2026hnb}       \\%new row
+$pp\to \tilde{\chi}^0_1\tilde{\chi}^0_2, \tilde{\chi}^0_1\tilde{\chi}^\pm_1, \tilde{\chi}^0_2\tilde{\chi}^\pm_1, \tilde{\chi}^\pm_1\tilde{\chi}^\mp_1$  & $\tilde{\chi}^0\to\mu^-u\bar{d}$, $\tilde{\chi}^\pm_1\to \mu^\pm d\bar{d}$  & $1600$ GeV (0.1 ns)  &    \cite{ATLAS:2026aej}       \\%new row
+$pp\to \tilde{\chi}^0_1\tilde{\chi}^0_2, \tilde{\chi}^0_1\tilde{\chi}^\pm_1, \tilde{\chi}^0_2\tilde{\chi}^\pm_1, \tilde{\chi}^\pm_1\tilde{\chi}^\mp_1$  & $\tilde{\chi}^0\to tsb$, $\tilde{\chi}^+_1\to \bar{b}\bar{s}\bar{b}$  & $1150$ GeV (0.1 ns) &    \cite{ATLAS:2026aej}       \\%new row
+$pp\to \tilde{t}\bar{\tilde{t}}$  & $\tilde{t}\to\mu^+b$  & $1850$ GeV (0.1 ns) &    \cite{ATLAS:2026aej}       \\%new row
+    \hline
+    \end{tabular}
+\caption{Current experimental limits on LLPs from LHC.} 
+\label{table:vll}
+  \end{table}
 
 \appendix
 \section{Some title}
